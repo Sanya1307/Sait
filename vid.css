@@ -1,1 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color:silver
+}
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+
+.hero-image {
+    background-image: url('i.jpg'); /* Замените на путь к вашей фотографии */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Высота изображения */
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header {
+    background-color: silver;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+.hero-image {
+    height: 200px; /* Пример высоты для изображения */
+    background-color: #ddd; /* Цвет фона для примера */
+}
+.content {
+    padding: 20px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Отступ между кнопками */
+    margin: 20px 0;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: Gray; /* Цвет кнопки при наведении */
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+.chat-container {
+    position: fixed; /* Фиксированное позиционирование */
+    bottom: 60px; /* Отступ от нижней части (чтобы не перекрывать ввод) */
+    right: 20px; /* Отступ от правой части */
+    width: 300px; /* Ширина чата */
+    max-height: 400px; /* Максимальная высота чата */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    overflow-y: auto; /* Прокрутка при переполнении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для чата */
+    z-index: 1000; /* Убедитесь, что чат поверх остальных элементов */
+}
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.message.user {
+    background-color: #d1e7dd; /* Цвет сообщения пользователя */
+    align-self: flex-end; /* Выравнивание вправо */
+}
+.message.bot {
+    background-color: #f8d7da; /* Цвет сообщения бота */
+    align-self: flex-start; /* Выравнивание влево */
+}
+.input-container {
+    position: fixed; /* Фиксированное позиционирование */
+    bottom: 20px; /* Отступ от нижней части */
+    right: 20px; /* Отступ от правой части */
+    width: 300px; /* Ширина контейнера ввода */
+    display: flex;
+}
+.input-container input {
+    flex: 1; /* Заполнение оставшегося пространства внутри контейнера */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.input-container button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3e3e3e;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.input-container button:hover {
+    background-color: #585858; /* Цвет кнопки при наведении */
+}
+.content {
+    background-color:silver; /* Белосерый фон */
+    padding: 20px;
+}
+.footer {
+    background-color:silver;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px; /* Отступы внутри прямоугольника */
+    position: fixed; /* Позволяет элементу оставаться на своем месте */
+    bottom: 0; /* Прикрепляет к нижней части страницы */
+    width: 100%; /* Ширина на всю страницу */
+}
