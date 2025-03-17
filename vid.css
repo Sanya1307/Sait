@@ -3,15 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    overflow: hidden;
+    overflow: clip; 
+    contain: content;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000; 
+  }
 
 body {
-    font-family: Arial, sans-serif;
+    background: -webkit-linear-gradient(90deg, #363636,#ffffff,#292929); background: linear-gradient(90deg, #363636,#ffffff,#292929);
 }
 body {
     background-color:silver
 }
 .header {
-    background-color: black;
+    background-color: rgb(66, 66, 66);
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -33,15 +46,9 @@ body {
 }
 
 .btn:hover {
-    background-color: #666;
+    background-color: #000000;
 }
 
-.hero-image {
-    background-image: url('i.jpg'); /* Замените на путь к вашей фотографии */
-    background-size: cover;
-    background-position: center;
-    height: 400px; /* Высота изображения */
-}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -51,7 +58,7 @@ body {
     height: 100vh;
 }
 .header {
-    background-color: silver;
+    background-color: rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
@@ -85,39 +92,7 @@ body {
     padding: 10px;
     background-color: #f1f1f1;
 }
-.chat-container {
-    position: fixed; /* Фиксированное позиционирование */
-    bottom: 60px; /* Отступ от нижней части (чтобы не перекрывать ввод) */
-    right: 20px; /* Отступ от правой части */
-    width: 300px; /* Ширина чата */
-    max-height: 400px; /* Максимальная высота чата */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    overflow-y: auto; /* Прокрутка при переполнении */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для чата */
-    z-index: 1000; /* Убедитесь, что чат поверх остальных элементов */
-}
-.message {
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-.message.user {
-    background-color: #d1e7dd; /* Цвет сообщения пользователя */
-    align-self: flex-end; /* Выравнивание вправо */
-}
-.message.bot {
-    background-color: #f8d7da; /* Цвет сообщения бота */
-    align-self: flex-start; /* Выравнивание влево */
-}
-.input-container {
-    position: fixed; /* Фиксированное позиционирование */
-    bottom: 20px; /* Отступ от нижней части */
-    right: 20px; /* Отступ от правой части */
-    width: 300px; /* Ширина контейнера ввода */
-    display: flex;
-}
+
 .input-container input {
     flex: 1; /* Заполнение оставшегося пространства внутри контейнера */
     padding: 10px;
@@ -141,8 +116,8 @@ body {
     padding: 20px;
 }
 .footer {
-    background-color:silver;
-    color: rgb(0, 0, 0);
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px; /* Отступы внутри прямоугольника */
     position: fixed; /* Позволяет элементу оставаться на своем месте */
