@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт</title>
@@ -8,10 +9,9 @@
 </head>
 <body>
     <header class="header">
-        Информация
+        <p style="color: rgb(255, 255, 255);">Информация</p>
     </header>
     <main>
-        <section class="hero-image"></section>
         <section class="content">
             <div align="center"><h1 id="animatedText">Наше ремесло - Ваш сайт</h1></div>
             <p></p>
@@ -27,7 +27,7 @@
 <h4></h4>
 </div>
 
-
+<script src="script.js"></script>
 
 </main>
 
@@ -35,47 +35,7 @@
 <!-- Сообщения будут добавляться сюда -->
 </div>
 
-<div class="input-container">
-<input type="text" id="messageInput" placeholder="Введите ваше сообщение..." />
-<button id="sendButton">Отправить</button>
-</div>
 
-<script>
-const chatContainer = document.getElementById('chatContainer');
-const messageInput = document.getElementById('messageInput');
-const sendButton = document.getElementById('sendButton');
-
-sendButton.addEventListener('click', () => {
-const messageText = messageInput.value.trim();
-if (messageText) {
-    addMessage(messageText, 'user'); // Добавляем сообщение пользователя
-    messageInput.value = ''; // Очищаем поле ввода
-    simulateBotResponse(messageText); // Симуляция ответа бота
-}
-});
-
-function addMessage(text, sender) {
-const messageElement = document.createElement('div');
-messageElement.classList.add('message', sender);
-messageElement.textContent = text;
-chatContainer.appendChild(messageElement);
-chatContainer.scrollTop = chatContainer.scrollHeight; // Прокручиваем вниз
-}
-
-function simulateBotResponse(userMessage) {
-setTimeout(() => {
-    const botMessage = "Вы написали: " + userMessage; // Простой ответ бота
-    addMessage(botMessage, 'bot'); // Добавляем ответ бота
-}, 1000); // Задержка перед ответом бота
-}
-
-// Обработка нажатия клавиши Enter для отправки сообщения
-messageInput.addEventListener('keypress', (event) => {
-if (event.key === 'Enter') {
-    sendButton.click(); // Вызываем клик по кнопке
-}
-});
-</script>
 <footer class="footer">
     <p>© 2025 название компании. Все права защищены.</p>
     </footer>
